@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-4 container-fluid col-md-3 col-sm-3" style="color: rgb(0, 0, 0);">
+            <form id="quizForm">
+                <h1 class="text-white">Quiz</h1>
+                <p>
+                    Question 1:
+                    <label for="answer1">What's your favorite color?</label>
+                <div class="d-flex px-4">
+                    <input type="radio" name="answer1" id="answer1" value="red">
+                    <h6 class="ms-2 mt-1">Red</h6>
+                </div>
+                <div class="d-flex px-4">
+                    <input type="radio" name="answer1" id="answer2" value="blue">
+                    <h6 class="ms-2 mt-1">Blue</h6>
+                </div>
+                </p>
+
+                <p>
+                    Question 1:
+                    <label for="answer1">What's your favourite type of food?</label>
+                <div class="d-flex px-4">
+                    <input type="radio" name="answer1" id="answer2" value="Jollof Rice">
+                    <h6 class="ms-2 mt-1">Jollof Rice</h6>
+                </div>
+                <div class="d-flex px-4">
+                    <input type="radio" name="answer1" id="answer3" value="Bread and Beans">
+                    <h6 class="ms-2 mt-1">Bread and beans</h6>
+                </div>
+                </p>
+        </div>
+        <div class="col-lg-3 mt-4 col-md-3 col-sm-3" style="color: rgb(0, 0, 0);">
+            <p class="mt-4">
+                Question 2:
+                <label for="answer1">Do You Prefer Coffee or Tea?</label>
+            <div class="d-flex px-4">
+                <input type="radio" name="answer2" id="answer4" value="Coffee">
+                <h6 class="ms-2 mt-1">Coffee</h6>
+            </div>
+            <div class="d-flex px-4">
+                <input type="radio" name="answer2" id="answer5" value="tea">
+                <h6 class="ms-2 mt-1">Tea</h6>
+                </p>
+            </div>
+
+            <p class="mt-5">
+                Question 3:
+                <label for="answer1">Do you prefer a hot or cold weather?</label>
+            <div class="d-flex px-4">
+                <input type="radio" name="answer1" id="answer6" value="hot">
+                <h6 class="ms-2 mt-1">Hot</h6>
+            </div>
+            <div class="d-flex px-4">
+                <input type="radio" name="answer1" id="answer7" value="cold">
+                <h6 class="ms-2 mt-1">Cold</h6>
+            </div>
+            <button class="btn btn-danger mt-3">Submit</button>
+            </p>
+        </div>
+
+        </form>
+    </div>
+    </div>
+
+    <script>
+        let totalScore = 0;
+
+        function calculateQuizScore() {
+            let q1Score = document.getElementById('answer1').value;
+            let q2Score = document.getElementById('answer2').value;
+            let q3Score = document.getElementById('answer3').value;
+            let q4Score = document.getElementById('answer4').value;
+            totalScore += q1Score + q2Score + q3Score + q4Score;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
